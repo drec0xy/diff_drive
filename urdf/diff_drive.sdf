@@ -1,0 +1,652 @@
+<sdf version='1.9'>
+  <model name='diff_drive'>
+    <link name='base_footprint'>
+      <inertial>
+        <pose>0.07544957438793549 -1.274730522447417 0.4900171970611519 0 0 0</pose>
+        <mass>44.372311544085179</mass>
+        <inertia>
+          <ixx>69.291460034692093</ixx>
+          <ixy>0.0020389307451935679</ixy>
+          <ixz>-0.0028236960513194909</ixz>
+          <iyy>33.544708364109603</iyy>
+          <iyz>-32.893688374363478</iyz>
+          <izz>42.136564144933899</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_footprint_fixed_joint_lump__base_link_collision'>
+        <pose>0 0 0.001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__casterSupportLeft_collision_1'>
+        <pose>0.5162600000000001 -1.0733 -0.26944 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/casterSupportLeft.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__casterHolderLeft_collision_2'>
+        <pose>0.5162600000000001 -1.0733 -0.26944 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/casterHolderLeft.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__casterSupportRight_collision_3'>
+        <pose>-0.36024 -1.0733 -0.26944 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/casterSupportRight.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__casterHolderRight_collision_4'>
+        <pose>-0.36024 -1.0733 -0.26944 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/casterHolderRight.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__chassis_collision_5'>
+        <pose>0.07695787020212611 -1.52680535726289 0.181738869902464 1.5707963267949 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/chassis.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__tower_collision_6'>
+        <pose>-0.009422172807446796 -1.706207102550672 0.3140945598622664 1.5707963267949 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/tower.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__lidar_collision_7'>
+        <pose>0.0764647713571876 -1.756299895789236 0.5135084996232981 1.5707963267949 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/lidar.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__towerLid_collision_8'>
+        <pose>-0.009422172807446796 -1.706207102550672 0.3140945598622664 1.5707963267949 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/towerLid.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__tireLeft_collision_9'>
+        <pose>0.539077625848538 -2.14317773349735 -0.200666803080188 1.5707963267949 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/tireLeft.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__tireRIght_collision_10'>
+        <pose>-0.387860216208303 -2.14524794513276 -0.201298122418271 1.5707963267949 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/tireRIght.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_footprint_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.001 0.001 0.001</size>
+          </box>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__base_link_visual_1'>
+        <pose>0 0 0.001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/base_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 0 1</diffuse>
+          <ambient>1 1 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__casterSupportLeft_visual_2'>
+        <pose>0.5162600000000001 -1.0733 -0.26944 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/casterSupportLeft.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.36765 0.36765 0.36765 1</diffuse>
+          <ambient>0.36765 0.36765 0.36765 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__casterHolderLeft_visual_3'>
+        <pose>0.5162600000000001 -1.0733 -0.26944 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/casterHolderLeft.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990196 1 1 1</diffuse>
+          <ambient>0.990196 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__casterSupportRight_visual_4'>
+        <pose>-0.36024 -1.0733 -0.26944 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/casterSupportRight.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.36765 0.36765 0.36765 1</diffuse>
+          <ambient>0.36765 0.36765 0.36765 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__casterHolderRight_visual_5'>
+        <pose>-0.36024 -1.0733 -0.26944 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/casterHolderRight.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990196 1 1 1</diffuse>
+          <ambient>0.990196 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__chassis_visual_6'>
+        <pose>0.07695787020212611 -1.52680535726289 0.181738869902464 1.5707963267949 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/chassis.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 0 1</diffuse>
+          <ambient>1 1 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__tower_visual_7'>
+        <pose>-0.009422172807446796 -1.706207102550672 0.3140945598622664 1.5707963267949 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/tower.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990196 1 1 1</diffuse>
+          <ambient>0.990196 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__lidar_visual_8'>
+        <pose>0.0764647713571876 -1.756299895789236 0.5135084996232981 1.5707963267949 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/lidar.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 1 1</diffuse>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__towerLid_visual_9'>
+        <pose>-0.009422172807446796 -1.706207102550672 0.3140945598622664 1.5707963267949 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/towerLid.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990196 1 1 1</diffuse>
+          <ambient>0.990196 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__tireLeft_visual_10'>
+        <pose>0.539077625848538 -2.14317773349735 -0.200666803080188 1.5707963267949 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/tireLeft.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 1 1</diffuse>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__tireRIght_visual_11'>
+        <pose>-0.387860216208303 -2.14524794513276 -0.201298122418271 1.5707963267949 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/tireRIght.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 1 1</diffuse>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='caster_wheel_left' type='revolute'>
+      <pose relative_to='base_footprint'>0.5162600000000001 -1.0733 -0.26944 1.5708 0 0</pose>
+      <parent>base_footprint</parent>
+      <child>casterWheelLeft</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <effort>1</effort>
+          <velocity>10</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>1</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='casterWheelLeft'>
+      <pose relative_to='caster_wheel_left'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-0.04220770573721561 0.002619173292170959 0.0003715776106788175 0 0 0</pose>
+        <mass>1.2449015684540321</mass>
+        <inertia>
+          <ixx>0.00717996926748666</ixx>
+          <ixy>-1.0467158823718179e-15</ixy>
+          <ixz>-7.7375782105322533e-16</ixz>
+          <iyy>0.003802857392937101</iyy>
+          <iyz>-6.4374503991326826e-20</iyz>
+          <izz>0.003802857392937101</izz>
+        </inertia>
+      </inertial>
+      <collision name='casterWheelLeft_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/casterWheelLeft.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='casterWheelLeft_fixed_joint_lump__casterTireLeft_collision_1'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/casterTireLeft.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='casterWheelLeft_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/casterWheelLeft.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.941176 0 0 1</diffuse>
+          <ambient>0.941176 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='casterWheelLeft_fixed_joint_lump__casterTireLeft_visual_1'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/casterTireLeft.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.313726 0.313726 0.313726 1</diffuse>
+          <ambient>0.313726 0.313726 0.313726 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='caster_wheel_right' type='revolute'>
+      <pose relative_to='base_footprint'>-0.36024 -1.0733 -0.26944 1.5708 0 0</pose>
+      <parent>base_footprint</parent>
+      <child>casterWheelRight</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <effort>1</effort>
+          <velocity>10</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='casterWheelRight'>
+      <pose relative_to='caster_wheel_right'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.03597480777191042 -0.001706324734967665 -0.000914080508363101 0 0 0</pose>
+        <mass>1.244901568454033</mass>
+        <inertia>
+          <ixx>0.00717996926748666</ixx>
+          <ixy>-8.1410030626505314e-17</ixy>
+          <ixz>-8.2284168628071752e-17</ixz>
+          <iyy>0.0038025279421822701</iyy>
+          <iyz>-2.6427427954334171e-19</iyz>
+          <izz>0.0038025279421822688</izz>
+        </inertia>
+      </inertial>
+      <collision name='casterWheelRight_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/casterWheelRight.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='casterWheelRight_fixed_joint_lump__casterRIghtTIre_collision_1'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/casterRIghtTIre.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='casterWheelRight_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/casterWheelRight.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.941176 0 0 1</diffuse>
+          <ambient>0.941176 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='casterWheelRight_fixed_joint_lump__casterRIghtTIre_visual_1'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/casterRIghtTIre.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.313726 0.313726 0.313726 1</diffuse>
+          <ambient>0.313726 0.313726 0.313726 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='wheel_left' type='revolute'>
+      <pose relative_to='base_footprint'>0.539077625848538 -2.14317773349735 -0.200666803080188 1.5707963267949 0 0</pose>
+      <parent>base_footprint</parent>
+      <child>wheelLeft</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <effort>1</effort>
+          <velocity>10</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='wheelLeft'>
+      <pose relative_to='wheel_left'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-0.06319566481291858 -7.630909787843033e-07 2.794059481841153e-06 0 0 0</pose>
+        <mass>4.2855214114456102</mass>
+        <inertia>
+          <ixx>0.061964553075777723</ixx>
+          <ixy>1.4373568807399581e-08</ixy>
+          <ixz>-6.0050905576853749e-08</ixz>
+          <iyy>0.04288669065211357</iyy>
+          <iyz>3.6050869949566921e-07</iyz>
+          <izz>0.042885713985989532</izz>
+        </inertia>
+      </inertial>
+      <collision name='wheelLeft_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/wheelLeft.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='wheelLeft_fixed_joint_lump__tyreLeft_collision_1'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/tyreLeft.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='wheelLeft_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/wheelLeft.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990196 1 1 1</diffuse>
+          <ambient>0.990196 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='wheelLeft_fixed_joint_lump__tyreLeft_visual_1'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/tyreLeft.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.186275 0.186275 0.186275 1</diffuse>
+          <ambient>0.186275 0.186275 0.186275 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='wheel_right' type='continous'>
+      <pose relative_to='base_footprint'>-0.387860216208303 -2.14524794513276 -0.201298122418271 1.5707963267949 0 0</pose>
+      <parent>base_footprint</parent>
+      <child>wheelRight</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <effort>1</effort>
+          <velocity>100</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='wheelRight'>
+      <pose relative_to='wheel_right'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.06319566481273385 -1.039266795087846e-06 2.7035159281915e-06 0 0 0</pose>
+        <mass>4.2855214114547504</mass>
+        <inertia>
+          <ixx>0.061964554403022898</ixx>
+          <ixy>-2.396840930859429e-08</ixy>
+          <ixz>5.6903895160317801e-08</ixz>
+          <iyy>0.042886690486960199</iyy>
+          <iyz>3.5390732788100618e-07</iyz>
+          <izz>0.04288571563775806</izz>
+        </inertia>
+      </inertial>
+      <collision name='wheelRight_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/wheelRight.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='wheelRight_fixed_joint_lump__tyreRight_collision_1'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/tyreRight.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='wheelRight_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/wheelRight.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.990196 1 1 1</diffuse>
+          <ambient>0.990196 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='wheelRight_fixed_joint_lump__tyreRight_visual_1'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://diff_drive/meshes/visual/tyreRight.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.186275 0.186275 0.186275 1</diffuse>
+          <ambient>0.186275 0.186275 0.186275 1</ambient>
+        </material>
+      </visual>
+    </link>
+
+    <plugin name='diff_drive' filename='libgazebo_ros_diff_drive.so'>
+      <left_joint>wheel_left</left_joint>
+      <right_joint>wheel_right</right_joint>
+      <wheel_separation>1.297</wheel_separation>
+      <wheel_diameter>0.066</wheel_diameter>
+      <max_wheel_torque>200</max_wheel_torque>
+      <max_wheel_acceleration>10.0</max_wheel_acceleration>
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+      <publish_wheel_tf>true</publish_wheel_tf>
+    </plugin>
+    <frame name='caster_holder_left' attached_to='casterSupportLeft'>
+      <pose>0 0 0 0 -0 0</pose>
+    </frame>
+    <frame name='casterHolderLeft' attached_to='caster_holder_left'/>
+    <frame name='caster_tire_left' attached_to='casterWheelLeft'>
+      <pose>0 0 0 0 -0 0</pose>
+    </frame>
+    <frame name='casterTireLeft' attached_to='caster_tire_left'/>
+    <frame name='caster_support_left' attached_to='base_link'>
+      <pose>0.51626 -1.0733 -0.27044 1.5708 -0 0</pose>
+    </frame>
+    <frame name='casterSupportLeft' attached_to='caster_support_left'/>
+    <frame name='caster_holder_right' attached_to='casterSupportRight'>
+      <pose>0 0 0 0 -0 0</pose>
+    </frame>
+    <frame name='casterHolderRight' attached_to='caster_holder_right'/>
+    <frame name='caster_right_tire' attached_to='casterWheelRight'>
+      <pose>0 0 0 0 -0 0</pose>
+    </frame>
+    <frame name='casterRIghtTIre' attached_to='caster_right_tire'/>
+    <frame name='caster_support_right' attached_to='base_link'>
+      <pose>-0.36024 -1.0733 -0.27044 1.5708 -0 0</pose>
+    </frame>
+    <frame name='casterSupportRight' attached_to='caster_support_right'/>
+    <frame name='lidar_' attached_to='tower'>
+      <pose>0.085887 0.199414 0.050093 0 -0 0</pose>
+    </frame>
+    <frame name='lidar' attached_to='lidar_'/>
+    <frame name='tower_lid' attached_to='tower'>
+      <pose>0 0 0 0 -0 0</pose>
+    </frame>
+    <frame name='towerLid' attached_to='tower_lid'/>
+    <frame name='tower_' attached_to='chassis'>
+      <pose>-0.08638 0.132356 0.179402 0 -0 0</pose>
+    </frame>
+    <frame name='tower' attached_to='tower_'/>
+    <frame name='chassis_top' attached_to='base_link'>
+      <pose>0.076958 -1.5268 0.180739 1.5708 -0 0</pose>
+    </frame>
+    <frame name='chassis' attached_to='chassis_top'/>
+    <frame name='tire_left' attached_to='base_link'>
+      <pose>0.539078 -2.14318 -0.201667 1.5708 -0 0</pose>
+    </frame>
+    <frame name='tireLeft' attached_to='tire_left'/>
+    <frame name='tyre_left' attached_to='wheelLeft'>
+      <pose>0 0 0 0 -0 0</pose>
+    </frame>
+    <frame name='tyreLeft' attached_to='tyre_left'/>
+    <frame name='tire_right' attached_to='base_link'>
+      <pose>-0.38786 -2.14525 -0.202298 1.5708 -0 0</pose>
+    </frame>
+    <frame name='tireRIght' attached_to='tire_right'/>
+    <frame name='tyre_right' attached_to='wheelRight'>
+      <pose>0 0 0 0 -0 0</pose>
+    </frame>
+    <frame name='tyreRight' attached_to='tyre_right'/>
+    <frame name='base_footprint_joint' attached_to='base_footprint'>
+      <pose>0 0 0.001 0 -0 0</pose>
+    </frame>
+    <frame name='base_link' attached_to='base_footprint_joint'/>
+  </model>
+</sdf>
