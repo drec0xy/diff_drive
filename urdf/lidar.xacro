@@ -96,7 +96,6 @@
             </plugin>
         </sensor>
     </gazebo>
-
-    
-
 </robot>
+
+
